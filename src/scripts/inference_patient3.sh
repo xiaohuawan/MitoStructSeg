@@ -1,0 +1,1 @@
+python inference.py -c patient3_config

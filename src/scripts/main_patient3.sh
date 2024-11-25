@@ -1,0 +1,1 @@
+python main.py -c patient3_config

@@ -1,0 +1,61 @@
+NAME: 'patient2' 
+
+MODEL:
+    input_nc: 1
+    output_nc: 2
+    num_classes: 2
+    input_channels: 64
+    level: 1
+
+TRAIN:
+    resume: False
+    model_name: ''
+    if_valid: True
+    train_num: 100
+    cache_path: '../caches/'
+    save_path: '../models/'
+    loss_func: 'WeightedMSELoss'   # 'WeightedBCELoss', 'BCELoss'
+    if_adv_weight: False
+    cross_loss_source: False
+    cross_loss_target: True
+    weight_cross: 0.1
+    weight_class: 0.1
+    consistency_weight_rampup: True
+
+    opt_type: 'adam'  # sgd
+    lr_mode: 'fixed'
+    total_iters: 10100  
+    rampup_iters: 50000
+    learning_rate: 0.0001
+    learning_rate_ms: 0.0001
+    learning_rate_mt: 0.0001
+    display_freq: 100
+    show_freq: 500
+    valid_freq: 500
+    save_freq: 500
+    power: 0.9
+    weight_adv_temporal: 0.0001
+    weight_adv_spatial: 0.0001
+    lamda_wd: 0.001
+
+    batch_size: 2
+    num_workers: 1
+    if_cuda: True
+    device: "cuda:0"
+
+    random_seed: 20221016  # -1 is none
+
+DATA:
+    input_size: 800
+    input_size_target: 800
+    data_dir_source: '../data/patient1'
+    data_dir_target: '../data/patient2'
+    data_dir_target_label: "../data/patient2/label_struct"
+    target_stride: 1
+    source_stride: 1
+    
+
+TEST:
+    pred_dir: ../data_pred/AMM-Seg/patient2
+    ckpt_path: ../models/patient2.ckpt
+    if_evaluate: True
