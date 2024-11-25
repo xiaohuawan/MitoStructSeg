@@ -159,7 +159,7 @@ pip install -r requirements.txt
 </p>
 
 
-- For detailed usage instructions, please refer to the user manual.[User manual](User Manual.pdf)
+- For detailed usage instructions, please refer to the user manual.[User manual](https://github.com/xiaohuawan/MitoStructSeg1/blob/main/User%20Manual.pdf))
 
 ## <a name="3D visualization"></a>📽️:3D visualization
 
@@ -167,9 +167,6 @@ pip install -r requirements.txt
 
 - [Watch 3D Visualization Video](https://github.com/xiaohuawan/MitoStructSeg1/blob/main/video/3D%20visualization.mp4)
 
-
-    
-- For detailed usage instructions, please refer to the user manual.[User manual](https://github.com/xiaohuawan/MitoStructSeg1/blob/main/User%20Manual.pdf))
 
 
 ## Citation
