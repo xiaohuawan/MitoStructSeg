@@ -110,6 +110,7 @@ pip install -r requirements.txt
 - Method2
   
     -For Windows:
+  
     -Run the following command directly in the terminal:
   
         ```shell
@@ -118,6 +119,7 @@ pip install -r requirements.txt
 
           ```
     -For Linux:
+  
     -Run the following command directly in the terminal:
   
         ```shell
