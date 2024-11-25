@@ -108,15 +108,22 @@ pip install -r requirements.txt
     - Next, open a new command prompt and use the `cd` command to navigate to the `MitoStructSeg/src/` directory. Then, enter `python app.py`. This will start the backend server running locally at `127.0.0.1:5000`.
 
 - Method2
+  
     -For Windows:
+  
     -Run the following command directly in the terminal:
+  
         ```shell
+  
         python start_win.py
 
           ```
     -For Linux:
-    -Run the following command directly in the terminal: 
+  
+    -Run the following command directly in the terminal:
+  
         ```shell
+  
         python start_linux.py
 
           ```
@@ -144,24 +151,23 @@ pip install -r requirements.txt
     </em>
 </p>
 
-<<<<<<< HEAD
+
 <p align="center">
-    <img src="video/presentation workflow.mp4"/> <br />
+    <a href="https://github.com/xiaohuawan/MitoStructSeg1/blob/main/video/presentation%20workflow.mp4">
+        <img src="https://img.shields.io/badge/Watch%20Video-presentation%20workflow.mp4-blue?style=for-the-badge" />
+    </a> <br />
 </p>
 
-- For detailed usage instructions, please refer to the user manual.[User manual](User Manual.pdf)
+
+- For detailed usage instructions, please refer to the user manual.([User manual](https://github.com/xiaohuawan/MitoStructSeg1/blob/main/User%20Manual.pdf))
 
 ## <a name="3D visualization"></a>📽️:3D visualization
 
-- 3D visualization of segmentation results for three patient datasets in an 800x800x400 voxel block, with green representing healthy mitochondria and red representing damaged mitochondria. 
+- 3D visualization of segmentation results for three patient datasets in an 800x800x400 voxel block, with green representing healthy mitochondria and red representing damaged mitochondria.
 
-<p align="center">
-    <img src="video/3D visualization.mp4"/> <br />
-</p>
+- [Watch 3D Visualization Video](https://github.com/xiaohuawan/MitoStructSeg1/blob/main/video/3D%20visualization.mp4)
 
-=======
-- For detailed usage instructions, please refer to the user manual.[User manual](/src/config/patient1_config.yaml)
->>>>>>> 39e710d710bb031b360854afed2b8dcee9825d70
+
 
 ## Citation
 
