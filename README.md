@@ -145,7 +145,7 @@ pip install -r requirements.txt
 </p>
 
 <p align="center">
-    <img src="images/compute.jpg"/> <br />
+    <img src="images/com.jpg"/> <br />
     <em> 
     Figure 3. Membrane Structure Calculation Interface.
     </em>
