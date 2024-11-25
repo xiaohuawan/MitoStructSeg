@@ -20,7 +20,7 @@
 ```shell
 # clone this repo
 git clone https://github.com/xiaohuawan/MitoStructSeg.git
-cd AMM-Seg
+cd MitoStructSeg
 
 # create environment
 conda create -n MitoStructSeg python=3.9.19
