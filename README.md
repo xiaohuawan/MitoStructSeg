@@ -106,12 +106,12 @@ pip install -r requirements.txt
     <tr class="bg-gray-100">
       <th class="border px-4 py-2 text-left font-bold"></th>
       <th class="border px-4 py-2 text-left font-bold"></th>
-      <th class="border px-4 py-2 text-center font-bold">Description</th>
-      <th class="border px-4 py-2 text-center font-bold">Data Path</th>
-      <th class="border px-4 py-2 text-center font-bold">Description</th>
-      <th class="border px-4 py-2 text-center font-bold">Data Path</th>
-      <th class="border px-4 py-2 text-center font-bold">Description</th>
-      <th class="border px-4 py-2 text-center font-bold">Data Path</th>
+      <th class="border px-4 py-2 text-center font-bold">Quark Cloud Disk</th>
+      <th class="border px-4 py-2 text-center font-bold">Google Cloud Disk</th>
+      <th class="border px-4 py-2 text-center font-bold">Quark Cloud Disk</th>
+      <th class="border px-4 py-2 text-center font-bold">Google Cloud Disk</th>
+      <th class="border px-4 py-2 text-center font-bold">Quark Cloud Disk</th>
+      <th class="border px-4 py-2 text-center font-bold">Google Cloud Disk</th>
     </tr>
   </thead>
   <!-- 表格内容 -->
