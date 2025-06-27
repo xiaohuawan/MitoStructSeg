@@ -65,7 +65,7 @@ pip install -r requirements.txt
     <tr>
       <th rowspan="3" class="border px-4 py-2 bg-blue-50 font-bold text-center">病人的心肌细胞线粒体</th>
       <td class="border px-4 py-2 font-bold">Patient#1</td>
-      <td class="border px-4 py-2">[download](https://pan.quark.cn/s/a42ead7affe3)<br>(pwd: p8FQ)</td>
+      <td class="border px-4 py-2"> (https://pan.quark.cn/s/a42ead7affe3)<br>(pwd: p8FQ) </td>
       <td class="border px-4 py-2 text-center">
         <a href="#" class="text-blue-600 hover:underline mr-2"><i class="fa fa-cloud"></i></a>
         <a href="#" class="text-red-600 hover:underline"><i class="fa fa-google"></i></a>
