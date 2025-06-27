@@ -37,6 +37,8 @@ pip install -r requirements.txt
 | patient3 | [download](https://pan.quark.cn/s/0153311a7b18)<br>(pwd: KP3P) | [download](https://drive.google.com/drive/folders/1zyUfF5EDRAMEm78bgWoQHL31krvavqC6?usp=drive_link) |
 
 
+| 分类                  | 样本/模型   | 源域 (Source Domain)                          | 目标域 (Target Domain)                        | 验证 (Validation)                            |
+|-----------------------|------------|----------------------------------------------|----------------------------------------------|----------------------------------------------|
 
 <table>
   <tr>
@@ -57,9 +59,6 @@ pip install -r requirements.txt
     <td>基因突变确诊患者的心肌细胞</td>
     <td>心脏康复训练后的心肌组织样本</td>
     <td>临床结局与线粒体功能的相关性验证</td>
-  </tr>
-  <tr>
-    <td colspan="5" align="center"><b>---------------------------------------------------------------------------------------------------</b></td>
   </tr>
   <tr>
     <th rowspan="2" align="center"><b>小鼠的线粒体</b></th>
