@@ -48,7 +48,6 @@ pip install -r requirements.txt
       <th class="border px-4 py-2 text-left font-bold">验证 (Validation)</th>
     </tr>
   </thead>
-  
   <!-- 表格内容 -->
   <tbody>
     <!-- 病人的心肌细胞线粒体 -->
@@ -71,12 +70,10 @@ pip install -r requirements.txt
       <td class="border px-4 py-2">心脏康复训练后的心肌组织样本</td>
       <td class="border px-4 py-2">临床结局与线粒体功能的相关性验证</td>
     </tr>
-    
     <!-- 分隔线 -->
     <tr>
       <td colspan="5" class="border-t-2 border-gray-300"></td>
     </tr>
-    
     <!-- 小鼠的线粒体 -->
     <tr>
       <th rowspan="2" class="border px-4 py-2 bg-green-50 font-bold text-center">小鼠的线粒体</th>
