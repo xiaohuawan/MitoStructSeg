@@ -295,7 +295,9 @@ pip install -r requirements.txt
 
 - [Watch 3D Visualization Video](https://github.com/xiaohuawan/MitoStructSeg1/blob/main/video/3D%20visualization.mp4)
 
+https://github.com/xiaohuawan/MitoStructSeg1/blob/main/video/3D%20visualization.mp4
 
+<img width="700" alt="image" src="(https://github.com/xiaohuawan/MitoStructSeg1/blob/main/video/3D%20visualization.mp4)" />
 
 ## Citation
 
