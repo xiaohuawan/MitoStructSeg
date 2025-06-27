@@ -294,9 +294,10 @@ pip install -r requirements.txt
 - 3D visualization of segmentation results for three patient datasets in an 800x800x400 voxel block, with green representing healthy mitochondria and red representing damaged mitochondria.
 
 - [Watch 3D Visualization Video](https://github.com/xiaohuawan/MitoStructSeg1/blob/main/video/3D%20visualization.mp4)
-- https://github.com/user-attachments/assets/93e155cf-d499-4ce4-8b9f-b0249d04c0af
 
-- <img width="700" alt="image" src="(https://github.com/user-attachments/assets/93e155cf-d499-4ce4-8b9f-b0249d04c0af)" />
+  
+  https://github.com/user-attachments/assets/93e155cf-d499-4ce4-8b9f-b0249d04c0af
+
 
 ## Citation
 
