@@ -91,6 +91,8 @@ pip install -r requirements.txt
 </table>
 
 
+
+
 <table class="table-auto w-full border-collapse">
   <!-- 表头 -->
   <thead>
@@ -112,7 +114,6 @@ pip install -r requirements.txt
       <th class="border px-4 py-2 text-center font-bold">Data Path</th>
     </tr>
   </thead>
-  
   <!-- 表格内容 -->
   <tbody>
     <!-- 病人的心肌细胞线粒体 -->
@@ -171,12 +172,10 @@ pip install -r requirements.txt
         <a href="#" class="text-red-600 hover:underline"><i class="fa fa-google"></i></a>
       </td>
     </tr>
-    
     <!-- 分隔线 -->
     <tr>
       <td colspan="8" class="border-t-2 border-gray-300"></td>
     </tr>
-    
     <!-- 小鼠的线粒体 -->
     <tr>
       <th rowspan="2" class="border px-4 py-2 bg-green-50 font-bold text-center">小鼠的线粒体</th>
