@@ -30,14 +30,6 @@ pip install -r requirements.txt
 
 ## <a name="segmentation_data"></a>ℹ️Dataset
 
-| Dataset Name | Quark Cloud Disk | Google Cloud Disk |
-| :---------: | :----------: | :----------: |
-| patient1 | [download](https://pan.quark.cn/s/a42ead7affe3)<br>(pwd: p8FQ) | [download](https://drive.google.com/drive/folders/1bPkDxMU8nW0xIE1LyLdTCyvABHjfkNHq?usp=drive_link) | 
-| patient2 | [download](https://pan.quark.cn/s/88b45e11fc11)<br>(pwd: dR3a) | [download](https://drive.google.com/drive/folders/1t5eYnyOY06gwRo-xQdVn-rOXE_P-K4N4?usp=drive_link) |
-| patient3 | [download](https://pan.quark.cn/s/0153311a7b18)<br>(pwd: KP3P) | [download](https://drive.google.com/drive/folders/1zyUfF5EDRAMEm78bgWoQHL31krvavqC6?usp=drive_link) |
-
-
-
 <table class="table-auto w-full border-collapse">
   <!-- 表头 -->
   <thead>
@@ -240,9 +232,6 @@ https://github.com/user-attachments/assets/87ed0033-c7ab-4643-af0a-1c3f13392452
 ## <a name="3D visualization"></a>📽️:3D visualization
 
 - 3D visualization of segmentation results for three patient datasets in an 800x800x400 voxel block, with green representing healthy mitochondria and red representing damaged mitochondria.
-
-- [Watch 3D Visualization Video](https://github.com/xiaohuawan/MitoStructSeg1/blob/main/video/3D%20visualization.mp4)
-
   
 https://github.com/user-attachments/assets/93e155cf-d499-4ce4-8b9f-b0249d04c0af
 
