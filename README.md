@@ -66,57 +66,29 @@ pip install -r requirements.txt
       <th rowspan="3" class="border px-4 py-2 bg-blue-50 font-bold text-center">病人的心肌细胞线粒体</th>
       <td class="border px-4 py-2 font-bold">Patient#1</td>
       <td class="border px-4 py-2">(https://pan.quark.cn/s/dcb88aa73c49?pwd=84J2)</td>
-      <td class="border px-4 py-2">(https://pan.quark.cn/s/dcb88aa73c49?pwd=84J2)</td>
-      <td class="border px-4 py-2 text-center">
-        <a href="#" class="text-blue-600 hover:underline mr-2"><i class="fa fa-cloud"></i></a>
-        <a href="#" class="text-red-600 hover:underline"><i class="fa fa-google"></i></a>
-      </td>
+      <td class="border px-4 py-2 text-center">G-101</td>
       <td class="border px-4 py-2">(https://pan.quark.cn/s/056b849eb0c2?pwd=8Thb)</td>
-      <td class="border px-4 py-2 text-center">
-        <a href="#" class="text-blue-600 hover:underline mr-2"><i class="fa fa-cloud"></i></a>
-        <a href="#" class="text-red-600 hover:underline"><i class="fa fa-google"></i></a>
-      </td>
+      <td class="border px-4 py-2 text-center">G-102</td>
       <td class="border px-4 py-2">(https://pan.quark.cn/s/60d56940b661?pwd=yZDD)</td>
-      <td class="border px-4 py-2 text-center">
-        <a href="#" class="text-blue-600 hover:underline mr-2"><i class="fa fa-cloud"></i></a>
-        <a href="#" class="text-red-600 hover:underline"><i class="fa fa-google"></i></a>
-      </td>
+      <td class="border px-4 py-2 text-center">G-103</td>
     </tr>
     <tr>
       <td class="border px-4 py-2 font-bold">Patient#2</td>
       <td class="border px-4 py-2">(https://pan.quark.cn/s/dcb88aa73c49?pwd=84J2)</td>
-      <td class="border px-4 py-2 text-center">
-        <a href="#" class="text-blue-600 hover:underline mr-2"><i class="fa fa-cloud"></i></a>
-        <a href="#" class="text-red-600 hover:underline"><i class="fa fa-google"></i></a>
-      </td>
+      <td class="border px-4 py-2 text-center">G-104</td>
       <td class="border px-4 py-2">(https://pan.quark.cn/s/312f08d717b8?pwd=kpUc)</td>
-      <td class="border px-4 py-2 text-center">
-        <a href="#" class="text-blue-600 hover:underline mr-2"><i class="fa fa-cloud"></i></a>
-        <a href="#" class="text-red-600 hover:underline"><i class="fa fa-google"></i></a>
-      </td>
+      <td class="border px-4 py-2 text-center">G-105</td>
       <td class="border px-4 py-2">(https://pan.quark.cn/s/419da953dd64?pwd=1ZyX)</td>
-      <td class="border px-4 py-2 text-center">
-        <a href="#" class="text-blue-600 hover:underline mr-2"><i class="fa fa-cloud"></i></a>
-        <a href="#" class="text-red-600 hover:underline"><i class="fa fa-google"></i></a>
-      </td>
+      <td class="border px-4 py-2 text-center">G-106</td>
     </tr>
     <tr>
       <td class="border px-4 py-2 font-bold">Patient#3</td>
       <td class="border px-4 py-2">(https://pan.quark.cn/s/dcb88aa73c49?pwd=84J2)</td>
-      <td class="border px-4 py-2 text-center">
-        <a href="#" class="text-blue-600 hover:underline mr-2"><i class="fa fa-cloud"></i></a>
-        <a href="#" class="text-red-600 hover:underline"><i class="fa fa-google"></i></a>
-      </td>
+      <td class="border px-4 py-2 text-center">G-107</td>
       <td class="border px-4 py-2">(https://pan.quark.cn/s/60d56940b661?pwd=yZDD)</td>
-      <td class="border px-4 py-2 text-center">
-        <a href="#" class="text-blue-600 hover:underline mr-2"><i class="fa fa-cloud"></i></a>
-        <a href="#" class="text-red-600 hover:underline"><i class="fa fa-google"></i></a>
-      </td>
+      <td class="border px-4 py-2 text-center">G-108</td>
       <td class="border px-4 py-2">(https://pan.quark.cn/s/128e56a52b63?pwd=vAsu)</td>
-      <td class="border px-4 py-2 text-center">
-        <a href="#" class="text-blue-600 hover:underline mr-2"><i class="fa fa-cloud"></i></a>
-        <a href="#" class="text-red-600 hover:underline"><i class="fa fa-google"></i></a>
-      </td>
+      <td class="border px-4 py-2 text-center">G-109</td>
     </tr>
     <!-- 分隔线 -->
     <tr>
@@ -127,37 +99,19 @@ pip install -r requirements.txt
       <th rowspan="2" class="border px-4 py-2 bg-green-50 font-bold text-center">小鼠的线粒体</th>
       <td rowspan="2" class="border px-4 py-2 font-bold">Mouse Kidney</td>
       <td class="border px-4 py-2">(https://pan.quark.cn/s/936686812cd3?pwd=4Apx)</td>
-      <td class="border px-4 py-2 text-center">
-        <a href="#" class="text-blue-600 hover:underline mr-2"><i class="fa fa-cloud"></i></a>
-        <a href="#" class="text-red-600 hover:underline"><i class="fa fa-google"></i></a>
-      </td>
+      <td class="border px-4 py-2 text-center">G-201</td>
       <td class="border px-4 py-2">(https://pan.quark.cn/s/c224765868e6?pwd=H6Kq)</td>
-      <td class="border px-4 py-2 text-center">
-        <a href="#" class="text-blue-600 hover:underline mr-2"><i class="fa fa-cloud"></i></a>
-        <a href="#" class="text-red-600 hover:underline"><i class="fa fa-google"></i></a>
-      </td>
+      <td class="border px-4 py-2 text-center">G-202</td>
       <td class="border px-4 py-2">(https://pan.quark.cn/s/2e1b809916f8?pwd=TgmZ)</td>
-      <td class="border px-4 py-2 text-center">
-        <a href="#" class="text-blue-600 hover:underline mr-2"><i class="fa fa-cloud"></i></a>
-        <a href="#" class="text-red-600 hover:underline"><i class="fa fa-google"></i></a>
-      </td>
+      <td class="border px-4 py-2 text-center">G-203</td>
     </tr>
     <tr>
       <td class="border px-4 py-2">正常饮食对照组小鼠线粒体</td>
-      <td class="border px-4 py-2 text-center">
-        <a href="#" class="text-blue-600 hover:underline mr-2"><i class="fa fa-cloud"></i></a>
-        <a href="#" class="text-red-600 hover:underline"><i class="fa fa-google"></i></a>
-      </td>
+      <td class="border px-4 py-2 text-center">G-204</td>
       <td class="border px-4 py-2">高脂饮食诱导的代谢应激模型</td>
-      <td class="border px-4 py-2 text-center">
-        <a href="#" class="text-blue-600 hover:underline mr-2"><i class="fa fa-cloud"></i></a>
-        <a href="#" class="text-red-600 hover:underline"><i class="fa fa-google"></i></a>
-      </td>
+      <td class="border px-4 py-2 text-center">G-205</td>
       <td class="border px-4 py-2">野生型小鼠验证基因表达差异</td>
-      <td class="border px-4 py-2 text-center">
-        <a href="#" class="text-blue-600 hover:underline mr-2"><i class="fa fa-cloud"></i></a>
-        <a href="#" class="text-red-600 hover:underline"><i class="fa fa-google"></i></a>
-      </td>
+      <td class="border px-4 py-2 text-center">G-206</td>
     </tr>
   </tbody>
 </table>
