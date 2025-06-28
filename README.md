@@ -66,7 +66,7 @@ pip install -r requirements.txt
       <th rowspan="3" class="border px-4 py-2 bg-blue-50 font-bold text-center">病人的心肌细胞线粒体</th>
       <td class="border px-4 py-2 font-bold">Patient#1</td>
       <td class="border px-4 py-2">(https://pan.quark.cn/s/dcb88aa73c49?pwd=84J2)</td>
-      <td class="border px-4 py-2 text-center">G-101</td>
+      <td class="border px-4 py-2 text-center">[download](https://drive.google.com/drive/folders/1vJkPMhCcefSfWCx_zbuTHxyiFi8GIbuw?usp=drive_link)</td>
       <td class="border px-4 py-2">(https://pan.quark.cn/s/056b849eb0c2?pwd=8Thb)</td>
       <td class="border px-4 py-2 text-center">G-102</td>
       <td class="border px-4 py-2">(https://pan.quark.cn/s/60d56940b661?pwd=yZDD)</td>
