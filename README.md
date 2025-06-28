@@ -49,8 +49,8 @@ pip install -r requirements.txt
       <th colspan="2" class="border px-4 py-2 text-center font-bold">Validation</th>
     </tr>
     <tr class="bg-gray-100">
-<!--       <th class="border px-4 py-2 text-left font-bold"></th>
-      <th class="border px-4 py-2 text-left font-bold"></th> -->
+      <th class="border px-4 py-2 text-left font-bold"></th>
+      <th class="border px-4 py-2 text-left font-bold"></th>
       <th class="border px-4 py-2 text-center font-bold">Quark Cloud Disk</th>
       <th class="border px-4 py-2 text-center font-bold">Google Cloud Disk</th>
       <th class="border px-4 py-2 text-center font-bold">Quark Cloud Disk</th>
@@ -65,6 +65,7 @@ pip install -r requirements.txt
     <tr>
       <th rowspan="3" class="border px-4 py-2 bg-blue-50 font-bold text-center">病人的心肌细胞线粒体</th>
       <td class="border px-4 py-2 font-bold">Patient#1</td>
+      <td class="border px-4 py-2">(https://pan.quark.cn/s/dcb88aa73c49?pwd=84J2)</td>
       <td class="border px-4 py-2">(https://pan.quark.cn/s/dcb88aa73c49?pwd=84J2)</td>
       <td class="border px-4 py-2 text-center">
         <a href="#" class="text-blue-600 hover:underline mr-2"><i class="fa fa-cloud"></i></a>
