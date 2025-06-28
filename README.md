@@ -42,7 +42,7 @@ pip install -r requirements.txt
   <!-- 表头 -->
   <thead>
     <tr class="bg-gray-100">
-      <th class="border px-4 py-2 text-left font-bold">分类</th>
+      <th class="border px-4 py-2 text-left font-bold">Dataset</th>
       <th class="border px-4 py-2 text-left font-bold">Dataset Name</th>
       <th colspan="2" class="border px-4 py-2 text-center font-bold">Source Domain</th>
       <th colspan="2" class="border px-4 py-2 text-center font-bold">Target Domain</th>
@@ -63,7 +63,7 @@ pip install -r requirements.txt
   <tbody>
     <!-- 病人的心肌细胞线粒体 -->
     <tr>
-      <th rowspan="3" class="border px-4 py-2 bg-blue-50 font-bold text-center">病人的心肌细胞线粒体</th>
+      <th rowspan="3" class="border px-4 py-2 bg-blue-50 font-bold text-center">Human Myocardium Dataset</th>
       <td class="border px-4 py-2 font-bold">Patient#1</td>
       <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/dcb88aa73c49?pwd=84J2" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
       <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/1FUkabspbYWQMlD52IzZ0C-uhBRZG4hSL?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
@@ -96,7 +96,7 @@ pip install -r requirements.txt
     </tr>
     <!-- 小鼠的线粒体 -->
     <tr>
-      <th rowspan="2" class="border px-4 py-2 bg-green-50 font-bold text-center">小鼠的线粒体</th>
+      <th rowspan="2" class="border px-4 py-2 bg-green-50 font-bold text-center">Mouse Kidney Dataset</th>
       <td rowspan="2" class="border px-4 py-2 font-bold">Mouse Kidney</td>
       <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/936686812cd3?pwd=4Apx" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
       <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/1vJkPMhCcefSfWCx_zbuTHxyiFi8GIbuw?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
@@ -233,6 +233,7 @@ pip install -r requirements.txt
     </a> <br />
 </p>
 
+https://github.com/user-attachments/assets/87ed0033-c7ab-4643-af0a-1c3f13392452
 
 - For detailed usage instructions, please refer to the user manual.([User manual](https://github.com/xiaohuawan/MitoStructSeg1/blob/main/User%20Manual.pdf))
 
@@ -243,7 +244,7 @@ pip install -r requirements.txt
 - [Watch 3D Visualization Video](https://github.com/xiaohuawan/MitoStructSeg1/blob/main/video/3D%20visualization.mp4)
 
   
-  https://github.com/user-attachments/assets/93e155cf-d499-4ce4-8b9f-b0249d04c0af
+https://github.com/user-attachments/assets/93e155cf-d499-4ce4-8b9f-b0249d04c0af
 
 
 ## Citation
