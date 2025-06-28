@@ -65,30 +65,30 @@ pip install -r requirements.txt
     <tr>
       <th rowspan="3" class="border px-4 py-2 bg-blue-50 font-bold text-center">病人的心肌细胞线粒体</th>
       <td class="border px-4 py-2 font-bold">Patient#1</td>
-      <td class="border px-4 py-2">(https://pan.quark.cn/s/dcb88aa73c49?pwd=84J2)</td>
-      <td class="border px-4 py-2 text-center">(https://drive.google.com/drive/folders/1FUkabspbYWQMlD52IzZ0C-uhBRZG4hSL?usp=drive_link)</td>
-      <td class="border px-4 py-2">(https://pan.quark.cn/s/056b849eb0c2?pwd=8Thb)</td>
-      <td class="border px-4 py-2 text-center">(https://drive.google.com/drive/folders/1q8lXrCagIiYcnAtMvyDSIelYxjEIcKsU?usp=drive_link)</td>
-      <td class="border px-4 py-2">(https://pan.quark.cn/s/60d56940b661?pwd=yZDD)</td>
-      <td class="border px-4 py-2 text-center">(https://drive.google.com/drive/folders/1OzDbBzn7qHXn6-2BcuHs3CnWWUdwscFL?usp=drive_link)</td>
+      <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/dcb88aa73c49?pwd=84J2" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/1FUkabspbYWQMlD52IzZ0C-uhBRZG4hSL?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/056b849eb0c2?pwd=8Thb" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/1q8lXrCagIiYcnAtMvyDSIelYxjEIcKsU?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/60d56940b661?pwd=yZDD" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/1OzDbBzn7qHXn6-2BcuHs3CnWWUdwscFL?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
     </tr>
     <tr>
       <td class="border px-4 py-2 font-bold">Patient#2</td>
-      <td class="border px-4 py-2">(https://pan.quark.cn/s/dcb88aa73c49?pwd=84J2)</td>
-      <td class="border px-4 py-2 text-center">(https://drive.google.com/drive/folders/1FUkabspbYWQMlD52IzZ0C-uhBRZG4hSL?usp=drive_link)</td>
-      <td class="border px-4 py-2">(https://pan.quark.cn/s/312f08d717b8?pwd=kpUc)</td>
-      <td class="border px-4 py-2 text-center">(https://drive.google.com/drive/folders/17nScKn5o4Ms5DQdcdUjPjSgesCkkADtN?usp=drive_link)</td>
-      <td class="border px-4 py-2">(https://pan.quark.cn/s/419da953dd64?pwd=1ZyX)</td>
-      <td class="border px-4 py-2 text-center">(https://drive.google.com/drive/folders/12v9CG1N-dlobQof0-f4uHyOSF88OUsP9?usp=drive_link)</td>
+      <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/dcb88aa73c49?pwd=84J2" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/1FUkabspbYWQMlD52IzZ0C-uhBRZG4hSL?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/312f08d717b8?pwd=kpUc" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/17nScKn5o4Ms5DQdcdUjPjSgesCkkADtN?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/419da953dd64?pwd=1ZyX" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/12v9CG1N-dlobQof0-f4uHyOSF88OUsP9?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
     </tr>
     <tr>
       <td class="border px-4 py-2 font-bold">Patient#3</td>
-      <td class="border px-4 py-2">(https://pan.quark.cn/s/dcb88aa73c49?pwd=84J2)</td>
-      <td class="border px-4 py-2 text-center">(https://drive.google.com/drive/folders/1FUkabspbYWQMlD52IzZ0C-uhBRZG4hSL?usp=drive_link)</td>
-      <td class="border px-4 py-2">(https://pan.quark.cn/s/60d56940b661?pwd=yZDD)</td>
-      <td class="border px-4 py-2 text-center">(https://drive.google.com/drive/folders/1-2TIn_4RRyykjpnEZgCk68FLQCSzYt0V?usp=drive_link)</td>
-      <td class="border px-4 py-2">(https://pan.quark.cn/s/128e56a52b63?pwd=vAsu)</td>
-      <td class="border px-4 py-2 text-center">(https://drive.google.com/drive/folders/1C44ypskqb6VplI2CyG9DxQbPBs5ZjQc6?usp=drive_link)</td>
+      <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/dcb88aa73c49?pwd=84J2" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/1FUkabspbYWQMlD52IzZ0C-uhBRZG4hSL?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/60d56940b661?pwd=yZDD" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/1-2TIn_4RRyykjpnEZgCk68FLQCSzYt0V?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/128e56a52b63?pwd=vAsu" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/1C44ypskqb6VplI2CyG9DxQbPBs5ZjQc6?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
     </tr>
     <!-- 分隔线 -->
     <tr>
@@ -98,12 +98,12 @@ pip install -r requirements.txt
     <tr>
       <th rowspan="2" class="border px-4 py-2 bg-green-50 font-bold text-center">小鼠的线粒体</th>
       <td rowspan="2" class="border px-4 py-2 font-bold">Mouse Kidney</td>
-      <td class="border px-4 py-2">(https://pan.quark.cn/s/936686812cd3?pwd=4Apx)</td>
-      <td class="border px-4 py-2 text-center">(https://drive.google.com/drive/folders/1vJkPMhCcefSfWCx_zbuTHxyiFi8GIbuw?usp=drive_link)</td>
-      <td class="border px-4 py-2">(https://pan.quark.cn/s/c224765868e6?pwd=H6Kq)</td>
-      <td class="border px-4 py-2 text-center">(https://drive.google.com/drive/folders/1KMhgTbYsC79zKuP0AMqGqcHWDXw9pvEi?usp=drive_link)</td>
-      <td class="border px-4 py-2">(https://pan.quark.cn/s/2e1b809916f8?pwd=TgmZ)</td>
-      <td class="border px-4 py-2 text-center">(https://drive.google.com/drive/folders/1a94VNx0lLUF27ZeWfG50QqixQ-6ltswk?usp=drive_link)</td>
+      <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/936686812cd3?pwd=4Apx" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/1vJkPMhCcefSfWCx_zbuTHxyiFi8GIbuw?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/c224765868e6?pwd=H6Kq" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/1KMhgTbYsC79zKuP0AMqGqcHWDXw9pvEi?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/2e1b809916f8?pwd=TgmZ" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/1a94VNx0lLUF27ZeWfG50QqixQ-6ltswk?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
     </tr>
   </tbody>
 </table>
