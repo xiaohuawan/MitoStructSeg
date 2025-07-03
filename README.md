@@ -109,8 +109,8 @@ pip install -r requirements.txt
 | Patient#1.ckpt | AMM-Seg trained on Patient#1  | [download](https://pan.quark.cn/s/5f233e1f1c78)<br>(pwd: xdJe) | [download](https://drive.google.com/file/d/1qtjoYP_fgBqAlzwT7f4V4NSbFhfkoHaS/view?usp=drive_link) |
 | Patient#2.ckpt | AMM-Seg trained on Patient#2 | [download](https://pan.quark.cn/s/273efdbd0429)<br>(pwd: L82x) | [download](https://drive.google.com/file/d/1vyqp5L1Xc1s7IMkUx58HNsmvt67TJ5Zt/view?usp=drive_link) |
 | Patient#3.ckpt | AMM-Seg trained on Patient#3 | [download](https://pan.quark.cn/s/b00e1a8fc24e)<br>(pwd: kpdH) | [download](https://drive.google.com/file/d/1f5-q3rx9PDeAmgErk4YMnRopuq4pHJif/view?usp=drive_link) |
-| classification.pt | model for evaluating classification | [download](https://pan.quark.cn/s/0ae19c46bb04)<br>(pwd: 8yjL) | [download](https://drive.google.com/file/d/1WJ_3EXh0RcMn1LyFHTq7W3Y9vw2hBU5x/view?usp=drive_link) |
-| Mouse Kidney.ckpt | AMM-Seg trained on Mouse Kidney | [download](https://pan.quark.cn/s/0ae19c46bb04)<br>(pwd: KDq2) | [download](https://drive.google.com/file/d/1YXqNwpOJ9sicekGvRQheIoUO8s2dAeFa/view?usp=drive_link) |
+| classification.pt | model for evaluating classification | [download](https://pan.quark.cn/s/8b4f1c58d9a8)<br>(pwd: NEMP) | [download](https://drive.google.com/file/d/1WJ_3EXh0RcMn1LyFHTq7W3Y9vw2hBU5x/view?usp=drive_link) |
+| Mouse Kidney.ckpt | AMM-Seg trained on Mouse Kidney | [download](https://pan.quark.cn/s/d74097a3f304)<br>(pwd: b5Nb) | [download](https://drive.google.com/file/d/1YXqNwpOJ9sicekGvRQheIoUO8s2dAeFa/view?usp=drive_link) |
 
 ## <a name="inference"></a>:crossed_swords:Inference
     
