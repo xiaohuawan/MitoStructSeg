@@ -53,12 +53,14 @@ pip install -r requirements.txt
   </thead>
   <!-- 表格内容 -->
   <tbody>
-    <!-- 病人的心肌细胞线粒体 -->
+    <!-- 病人的心肌细胞线粒体（合并源域链接） -->
     <tr>
       <th rowspan="3" class="border px-4 py-2 bg-blue-50 font-bold text-center">Human Myocardium Dataset</th>
       <td class="border px-4 py-2 font-bold">Patient#1</td>
-      <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/dcb88aa73c49?pwd=84J2" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
-      <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/1FUkabspbYWQMlD52IzZ0C-uhBRZG4hSL?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <!-- 源域链接：三个Patient共享，仅显示一次 -->
+      <td class="border px-4 py-2 text-center" rowspan="3"><a href="https://pan.quark.cn/s/dcb88aa73c49?pwd=84J2" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <td class="border px-4 py-2 text-center" rowspan="3"><a href="https://drive.google.com/drive/folders/1FUkabspbYWQMlD52IzZ0C-uhBRZG4hSL?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <!-- 目标域和验证集链接保留独立 -->
       <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/056b849eb0c2?pwd=8Thb" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
       <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/1q8lXrCagIiYcnAtMvyDSIelYxjEIcKsU?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
       <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/6c07a6a5f065?pwd=1SCJ" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
@@ -66,8 +68,7 @@ pip install -r requirements.txt
     </tr>
     <tr>
       <td class="border px-4 py-2 font-bold">Patient#2</td>
-      <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/dcb88aa73c49?pwd=84J2" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
-      <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/1FUkabspbYWQMlD52IzZ0C-uhBRZG4hSL?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <!-- 源域链接通过rowspan合并，此处不重复显示 -->
       <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/312f08d717b8?pwd=kpUc" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
       <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/17nScKn5o4Ms5DQdcdUjPjSgesCkkADtN?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
       <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/419da953dd64?pwd=1ZyX" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
@@ -75,8 +76,7 @@ pip install -r requirements.txt
     </tr>
     <tr>
       <td class="border px-4 py-2 font-bold">Patient#3</td>
-      <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/dcb88aa73c49?pwd=84J2" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
-      <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/1FUkabspbYWQMlD52IzZ0C-uhBRZG4hSL?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
+      <!-- 源域链接通过rowspan合并，此处不重复显示 -->
       <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/60d56940b661?pwd=yZDD" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
       <td class="border px-4 py-2 text-center"><a href="https://drive.google.com/drive/folders/1-2TIn_4RRyykjpnEZgCk68FLQCSzYt0V?usp=drive_link" target="_blank" class="inline-flex items-center px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
       <td class="border px-4 py-2 text-center"><a href="https://pan.quark.cn/s/128e56a52b63?pwd=vAsu" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"><i class="fa fa-download mr-2"></i>Download</a></td>
@@ -86,7 +86,7 @@ pip install -r requirements.txt
     <tr>
       <td colspan="8" class="border-t-2 border-gray-300"></td>
     </tr>
-    <!-- 小鼠的线粒体 -->
+    <!-- 小鼠的线粒体（保持不变） -->
     <tr>
       <th rowspan="2" class="border px-4 py-2 bg-green-50 font-bold text-center">Mouse Kidney Dataset</th>
       <td rowspan="2" class="border px-4 py-2 font-bold">Mouse Kidney</td>
