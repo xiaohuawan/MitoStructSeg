@@ -235,8 +235,10 @@ https://github.com/user-attachments/assets/87ed0033-c7ab-4643-af0a-1c3f13392452
   
 https://github.com/user-attachments/assets/93e155cf-d499-4ce4-8b9f-b0249d04c0af
 
+This program is built upon a set of great works:
+- [DA-ISC](https://github.com/weih527/DA-ISC)
+- [berry-free-react-admin-template](https://github.com/codedthemes/berry-free-react-admin-template)
 
-## Citation
 
 
 
