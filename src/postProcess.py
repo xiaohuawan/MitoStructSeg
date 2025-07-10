@@ -13,7 +13,7 @@ class PostProcess:
         self.save_path = save_path
 
     def download_images(self):
-        # 下载图像路径JSON文件
+       
         response = requests.get(self.json_url)
         if response.status_code != 200:
             logger.error(f"Failed to download JSON from {self.json_url}")
@@ -21,11 +21,11 @@ class PostProcess:
 
         image_paths = response.json()
         
-        # 下载图像到本地目录
+       
         if not os.path.exists(self.save_path):
             os.makedirs(self.save_path)
         else:
-            # 清空目录中的旧文件
+            
             for f in os.listdir(self.save_path):
                 os.remove(os.path.join(self.save_path, f))
 
@@ -47,9 +47,7 @@ class PostProcess:
         return path_list
 
     def del_dot_byOpen(self, kernel_size: int, path_list):
-        """
-        对分割的结果进行开运算, 去除小点
-        """
+ 
         save_path = self.save_path
         base_url = "http://localhost:3000/free/postP"
         # base_url = "http://localhost:3000/free/seg/postP"
@@ -61,20 +59,20 @@ class PostProcess:
             file_name = os.path.basename(path)
             logger.info(f"Processing image: {path}")
 
-            # 读取图像
+            
             image = cv2.imread(path, cv2.IMREAD_UNCHANGED)
             if image is None:
                 logger.error(f"Failed to read image: {path}")
                 continue
 
-            # 设置形态学操作的核大小，根据您的小点大小进行调整
+           
             kernel = np.ones((kernel_size, kernel_size), np.uint8)
             logger.info(f"Kernel size: {kernel_size}")
 
-            # 进行开运算，去除小点
+            
             opening = cv2.morphologyEx(image, cv2.MORPH_OPEN, kernel)
 
-            # 保存处理后的图像
+          
             result_path = os.path.join(save_path, file_name)
             cv2.imwrite(result_path, opening)
             logger.info(f"Processed {file_name} and saved to {result_path}")
@@ -82,7 +80,7 @@ class PostProcess:
             current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
             current_path = os.getcwd()
 
-            # 确保目录存在
+            
             save_path2 = os.path.abspath(os.path.join(current_path, '..', 'vite', 'public', f"postP_{current_time}")) 
             if not os.path.exists(save_path2):
                 os.makedirs(save_path2)
@@ -99,7 +97,7 @@ class PostProcess:
             # cv2.imwrite(result_path3, image)
             # logger.info(f"Processed {file_name} and saved to {result_path3}")
 
-            # 添加到处理后的路径列表
+           
             processed_url = f"{base_url}/{file_name}"
             processed_paths.append(processed_url)
 
@@ -109,7 +107,7 @@ class PostProcess:
             # processed_url3 = f"{base_url2}/{file_name}"s
             # processed_paths3.append(processed_url3)
 
-        # 将处理后的路径写入 JSON 文件
+        
         with open(os.path.join(save_path, 'postP.json'), 'w') as f:
             json.dump(processed_paths, f, indent=4)
             logger.info(f"Processed paths written to {os.path.join(save_path, 'postP.json')}")
@@ -134,48 +132,48 @@ class PostProcess:
             file_name = os.path.basename(path)
             logger.info(f"Processing image: {path}")
 
-            # 读取图像
+           
             image = cv2.imread(path, cv2.IMREAD_UNCHANGED)
             if image is None:
                 logger.error(f"Failed to read image: {path}")
                 continue
 
-            # 寻找所有的连通组件
+           
             num_labels, labels, stats, centroids = cv2.connectedComponentsWithStats(image, connectivity=8)
             logger.info(f"Found {num_labels} components")
 
-            # 过滤掉小的连通组件
-            for i in range(1, num_labels):  # 跳过背景
+            
+            for i in range(1, num_labels): 
                 if stats[i, cv2.CC_STAT_AREA] < min_area:
                     image[labels == i] = 0
 
-            # 保存处理后的图像
+            
             result_path = os.path.join(save_path, file_name)
             cv2.imwrite(result_path, image)
             logger.info(f"Processed {file_name} and saved to {result_path}")
 
-            # 添加到处理后的路径列表
+          
             processed_url = f"{base_url}/{file_name}"
             processed_paths.append(processed_url)
 
-        # 将处理后的路径写入 JSON 文件
+        
         with open(os.path.join(save_path, 'postP.json'), 'w') as f:
             json.dump(processed_paths, f, indent=4)
             logger.info(f"Processed paths written to {os.path.join(save_path, 'postP.json')}")
 
 if __name__ == "__main__":
-    # 指定路径
+    
     json_url = "http://localhost:3000/free/seg/png_paths.json"
     current_path = os.getcwd()
     # print("888888888888", current_path)
     save_path = os.path.abspath(os.path.join(current_path, 'AMM-Seg', 'vite', 'public', 'seg', 'postP')) 
-    # 设置处理类型和参数
+   
     process_type = "opening"  # "opening" 或 "area"
     param = 8  
  
     process = PostProcess(data_url=None, json_url=json_url, save_path=save_path)
 
-    # 下载图像
+   
     path_list = process.download_images()
 
     if process_type == "opening":
