@@ -6,10 +6,12 @@
 - [Installation](#installation)
 - [Dataset](#segmentation_data)
 - [Pretrained Models](#pretrained_models)
-- [GUI](#Usage)
+- [Data Tree](#Data_Tree)
+- [Train](#Train)
 - [Inference](#inference)
+- [GUI](#Usage)
+
 - [visualization](#visualization)
-- [Citation](#Citation)
 
 ## <a name="update"></a>:new:Update
 
@@ -101,7 +103,6 @@ pip install -r requirements.txt
 </table>
 
 
-
 ## <a name="pretrained_models"></a>:dna:Pretrained Models
 
 | Model Name | Description |  Quark Cloud Disk | Google Cloud Disk |  
@@ -151,22 +152,16 @@ pip install -r requirements.txt
 
 ## <a name="inference"></a>:crossed_swords:Inference
 
-**We store our trained models at [GoogleDrive](https://drive.google.com/drive/folders/1plJ0fyeCqIekUGNxKloY3YGMGnmOcsw9?usp=drive_link) or [BaiduYun](https://pan.quark.cn/s/962f18419644?pwd=4S11)**    
+**We store our trained models at [GoogleDrive](https://drive.google.com/drive/folders/1plJ0fyeCqIekUGNxKloY3YGMGnmOcsw9?usp=drive_link) or [Quark Cloud](https://pan.quark.cn/s/962f18419644?pwd=4S11)**    
 
+1. Fill in the [training configuration file](/src/config/patient1_config.yaml) with appropriate values.
+2. Start inference!
+   
     ```shell
     cd /MitoStructSeg1-main/src
     python inference.py 
     ```
-Print
-    ```shell
-    cfg_file: patient1_config.yaml
-    Begin inference...
-    40it [00:19,  2.07it/s]
-    Prediction time (s): 19.305577039718628
-    Measure on mAP, F1, MCC, and IoU...
-    Measurement time (s): 7.470831871032715
-    Done 
-    ```
+
 
 ## <a name="Usage"></a>📽️:GUI
 
