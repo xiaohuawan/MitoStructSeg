@@ -506,7 +506,7 @@ pip install -r requirements.txt
 
 https://github.com/user-attachments/assets/87ed0033-c7ab-4643-af0a-1c3f13392452
 
-- For detailed usage instructions, please refer to the user manual.([User manual](https://github.com/xiaohuawan/MitoStructSeg1/blob/main/User%20Manual.pdf))
+
 
 ## <a name="3D visualization"></a>📽️ 3D Visualization
 
@@ -547,22 +547,6 @@ https://github.com/user-attachments/assets/a79d8bbc-d49e-43d4-9604-64a294f05dcc
 </div>
 
 ---
-
-
-
-This program is built upon a set of great works:
-- [DA-ISC](https://github.com/weih527/DA-ISC)
-- [berry-free-react-admin-template](https://github.com/codedthemes/berry-free-react-admin-template)
-
-
-
-
-  
-  
-  
-
-
-
 
 
 
