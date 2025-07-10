@@ -118,17 +118,17 @@ pip install -r requirements.txt
 
     ├── data
     │   ├── patient1
-    │   │   ├── data_all
+    │   │   ├── data_all(Target Domain)
     │   │   ├── data_all_texture
-    │   │   ├── label_100_20230912
+    │   │   ├── label_100_20230912(Source Domain)
     │   │   │   ├── data
     │   │   │   ├── data_texture
     │   │   │   └── label
-    │   │   ├── label_100_20231117
+    │   │   ├── label_100_20231117(Source Domain)
     │   │   │   ├── data
     │   │   │   ├── data_texture
     │   │   │   └── label
-    │   │   └── label_struct
+    │   │   └── label_struct(Validation_label)
     ├── models
     ├── src
     │   ├── config
