@@ -257,7 +257,7 @@ https://github.com/user-attachments/assets/87ed0033-c7ab-4643-af0a-1c3f13392452
 
 - 3D visualization of segmentation results for three patient datasets in an 800x800x400 voxel block, with green representing healthy mitochondria and red representing damaged mitochondria.
 
-- Human Myocardium
+    - Human Myocardium
 
 Patient#1
 
@@ -274,7 +274,7 @@ Patient#3
 https://github.com/user-attachments/assets/5b55fbd2-ef90-4c0b-9ea8-b96a10e36587
 
 
-- Mouse_Kidney
+    - Mouse_Kidney
 
 https://github.com/user-attachments/assets/a79d8bbc-d49e-43d4-9604-64a294f05dcc
 
