@@ -258,33 +258,29 @@ https://github.com/user-attachments/assets/87ed0033-c7ab-4643-af0a-1c3f13392452
 > **3D visualization of segmentation results** in 800×800×400 voxel blocks  
 > 🟢 **Green**: Healthy mitochondria | 🔴 **Red**: Damaged mitochondria
 
+---
+
 ### 🫀 Human Myocardium
 
-<table>
-<tr>
-<td align="center" width="33%">
+<div align="center">
 
 **Patient #1**
 
 https://github.com/user-attachments/assets/dda707b6-f3c1-47c5-a04c-06ddc961e456
 
-</td>
-<td align="center" width="33%">
+---
 
 **Patient #2**
 
 https://github.com/user-attachments/assets/538c905c-cd12-424b-a251-fef1ddff8e3b
 
-</td>
-<td align="center" width="33%">
+---
 
 **Patient #3**
 
 https://github.com/user-attachments/assets/5b55fbd2-ef90-4c0b-9ea8-b96a10e36587
 
-</td>
-</tr>
-</table>
+</div>
 
 ---
 
