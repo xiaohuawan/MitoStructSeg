@@ -258,16 +258,16 @@ https://github.com/user-attachments/assets/87ed0033-c7ab-4643-af0a-1c3f13392452
 - 3D visualization of segmentation results for three patient datasets in an 800x800x400 voxel block, with green representing healthy mitochondria and red representing damaged mitochondria.
 
 Patient#1
-https://github.com/user-attachments/assets/dda707b6-f3c1-47c5-a04c-06ddc961e456
+https://github.com/user-attachments/assets/dda707b6-f3c1-47c5-a04c-06ddc961e456.mp4
 
 Patient#2
-https://github.com/user-attachments/assets/538c905c-cd12-424b-a251-fef1ddff8e3b
+https://github.com/user-attachments/assets/538c905c-cd12-424b-a251-fef1ddff8e3b.mp4
 
 Patient#3
-https://github.com/user-attachments/assets/5b55fbd2-ef90-4c0b-9ea8-b96a10e36587
+https://github.com/user-attachments/assets/5b55fbd2-ef90-4c0b-9ea8-b96a10e36587.mp4
 
 Mouse_Kidney
-https://github.com/user-attachments/assets/a79d8bbc-d49e-43d4-9604-64a294f05dcc
+https://github.com/user-attachments/assets/a79d8bbc-d49e-43d4-9604-64a294f05dcc.mp4
 
 This program is built upon a set of great works:
 - [DA-ISC](https://github.com/weih527/DA-ISC)
