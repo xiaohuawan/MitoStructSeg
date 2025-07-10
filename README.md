@@ -253,30 +253,64 @@ https://github.com/user-attachments/assets/87ed0033-c7ab-4643-af0a-1c3f13392452
 
 - For detailed usage instructions, please refer to the user manual.([User manual](https://github.com/xiaohuawan/MitoStructSeg1/blob/main/User%20Manual.pdf))
 
-## <a name="3D visualization"></a>📽️:3D visualization
+## <a name="3D visualization"></a>📽️ 3D Visualization
 
-- 3D visualization of segmentation results for three patient datasets in an 800x800x400 voxel block, with green representing healthy mitochondria and red representing damaged mitochondria.
+> **3D visualization of segmentation results** in 800×800×400 voxel blocks  
+> 🟢 **Green**: Healthy mitochondria | 🔴 **Red**: Damaged mitochondria
 
-    - Human Myocardium
+### 🫀 Human Myocardium
 
-Patient#1
+<table>
+<tr>
+<td align="center" width="33%">
+
+**Patient #1**
 
 https://github.com/user-attachments/assets/dda707b6-f3c1-47c5-a04c-06ddc961e456
 
+</td>
+<td align="center" width="33%">
 
-Patient#2
+**Patient #2**
 
 https://github.com/user-attachments/assets/538c905c-cd12-424b-a251-fef1ddff8e3b
 
+</td>
+<td align="center" width="33%">
 
-Patient#3
+**Patient #3**
 
 https://github.com/user-attachments/assets/5b55fbd2-ef90-4c0b-9ea8-b96a10e36587
 
+</td>
+</tr>
+</table>
 
-    - Mouse_Kidney
+---
+
+### 🐭 Mouse Kidney
+
+<div align="center">
 
 https://github.com/user-attachments/assets/a79d8bbc-d49e-43d4-9604-64a294f05dcc
+
+</div>
+
+---
+
+<details>
+<summary><b>📊 Visualization Details</b></summary>
+
+- **Volume Size**: 800×800×400 voxels
+- **Color Coding**: 
+  - 🟢 Green: Healthy mitochondrial structures
+  - 🔴 Red: Damaged/pathological mitochondria
+- **Datasets**: 
+  - Human cardiac tissue from 3 patients
+  - Mouse kidney tissue samples
+- **Rendering**: High-resolution 3D reconstruction with transparency effects
+
+</details>
 
 
 This program is built upon a set of great works:
