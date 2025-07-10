@@ -56,6 +56,6 @@ DATA:
     
 
 TEST:
-    pred_dir: ../data_pred/AMM-Seg/patient3
+    pred_dir: ../data_pred/patient3
     ckpt_path: ../models/patient3.ckpt
     if_evaluate: True
