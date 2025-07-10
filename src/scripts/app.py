@@ -13,7 +13,6 @@ from postProcess import PostProcess
 import sys
 import os
 
-# 将 src 目录添加到 Python 路径中
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 
@@ -139,7 +138,7 @@ def compute():
             else:
                 return jsonify({"error": f"Failed to download image: {url}"}), 400
 
-        mito_compute = MitoCompute(file_paths=downloaded_files)  # 修改这里
+        mito_compute = MitoCompute(file_paths=downloaded_files)  
         mito_compute.handle()
 
         return jsonify({"status": "success"})
