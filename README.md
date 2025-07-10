@@ -112,31 +112,60 @@ pip install -r requirements.txt
 | classification.pt | model for evaluating classification | [download](https://pan.quark.cn/s/8b4f1c58d9a8)<br>(pwd: NEMP) | [download](https://drive.google.com/file/d/1WJ_3EXh0RcMn1LyFHTq7W3Y9vw2hBU5x/view?usp=drive_link) |
 | Mouse Kidney.ckpt | AMM-Seg trained on Mouse Kidney | [download](https://pan.quark.cn/s/d74097a3f304)<br>(pwd: b5Nb) | [download](https://drive.google.com/file/d/1YXqNwpOJ9sicekGvRQheIoUO8s2dAeFa/view?usp=drive_link) |
 
-## <a name="inference"></a>:crossed_swords:Inference
-    
 
-    python inference.py -model MitoStructSeg -c patient1_config
+## <a name="Data Tree"></a>:crossed_swords:Data Tree
+
+    ├── data
+    │   ├── patient1
+    │   │   ├── data_all
+    │   │   ├── data_all_texture
+    │   │   ├── label_100_20230912
+    │   │   │   ├── data
+    │   │   │   ├── data_texture
+    │   │   │   └── label
+    │   │   ├── label_100_20231117
+    │   │   │   ├── data
+    │   │   │   ├── data_texture
+    │   │   │   └── label
+    │   │   └── label_struct
+    ├── models
+    ├── src
+    │   ├── config
+    │   ├── dataset
+    │   ├── model
+    │   ├── scripts
+    │   └── utils
 
 
 ## <a name="train"></a>:stars:Train
 
-<a name="gen_file_list"></a>
-1. Generate file list of validation set, a file list looks like:
+1. Fill in the [training configuration file](/src/config/patient1_config.yaml) with appropriate values.
 
-    ```txt
-    /path/to/patient1/data
-    /path/to/patient2/data
-    /path/to/patient3/data
-    ...
-    ```
-
-2. Fill in the [training configuration file](/src/config/patient1_config.yaml) with appropriate values.
-
-3. Start training!
+2. Start training!
 
     ```shell
-    python main.py \
-    -c patient1_config
+    cd /MitoStructSeg1-main/src
+    python main.py -c patient1_config
+    ```
+
+
+## <a name="inference"></a>:crossed_swords:Inference
+
+**We store our trained models at [GoogleDrive](https://drive.google.com/drive/folders/1plJ0fyeCqIekUGNxKloY3YGMGnmOcsw9?usp=drive_link) or [BaiduYun](https://pan.quark.cn/s/962f18419644?pwd=4S11)**    
+
+    ```shell
+    cd /MitoStructSeg1-main/src
+    python inference.py 
+    ```
+Print
+    ```shell
+    cfg_file: patient1_config.yaml
+    Begin inference...
+    40it [00:19,  2.07it/s]
+    Prediction time (s): 19.305577039718628
+    Measure on mAP, F1, MCC, and IoU...
+    Measurement time (s): 7.470831871032715
+    Done 
     ```
 
 ## <a name="Usage"></a>📽️:GUI
