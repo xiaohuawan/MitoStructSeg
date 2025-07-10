@@ -513,7 +513,6 @@ https://github.com/user-attachments/assets/87ed0033-c7ab-4643-af0a-1c3f13392452
 > **3D visualization of segmentation results** in 800×800×400 voxel blocks  
 > 🟢 **Green**: Healthy mitochondria | 🔴 **Red**: Damaged mitochondria
 
----
 
 ### 🫀 Human Myocardium
 
@@ -549,19 +548,6 @@ https://github.com/user-attachments/assets/a79d8bbc-d49e-43d4-9604-64a294f05dcc
 
 ---
 
-<details>
-<summary><b>📊 Visualization Details</b></summary>
-
-- **Volume Size**: 800×800×400 voxels
-- **Color Coding**: 
-  - 🟢 Green: Healthy mitochondrial structures
-  - 🔴 Red: Damaged/pathological mitochondria
-- **Datasets**: 
-  - Human cardiac tissue from 3 patients
-  - Mouse kidney tissue samples
-- **Rendering**: High-resolution 3D reconstruction with transparency effects
-
-</details>
 
 
 This program is built upon a set of great works:
