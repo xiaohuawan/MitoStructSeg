@@ -55,6 +55,6 @@ DATA:
     source_stride: 1
 
 TEST:
-    pred_dir: ../data_pred/AMM-Seg/patient1
+    pred_dir: ../data_pred/patient1
     ckpt_path: ../models/patient1.ckpt
     if_evaluate: True
