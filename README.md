@@ -106,11 +106,11 @@ pip install -r requirements.txt
 
 | Model Name | Description |  Quark Cloud Disk | Google Cloud Disk |  
 | :---------: | :----------: | :----------: | :----------: |
-| Patient#1.ckpt | AMM-Seg trained on Patient#1  | [download](https://pan.quark.cn/s/5f233e1f1c78)<br>(pwd: xdJe) | [download](https://drive.google.com/file/d/1qtjoYP_fgBqAlzwT7f4V4NSbFhfkoHaS/view?usp=drive_link) |
-| Patient#2.ckpt | AMM-Seg trained on Patient#2 | [download](https://pan.quark.cn/s/273efdbd0429)<br>(pwd: L82x) | [download](https://drive.google.com/file/d/1vyqp5L1Xc1s7IMkUx58HNsmvt67TJ5Zt/view?usp=drive_link) |
-| Patient#3.ckpt | AMM-Seg trained on Patient#3 | [download](https://pan.quark.cn/s/b00e1a8fc24e)<br>(pwd: kpdH) | [download](https://drive.google.com/file/d/1f5-q3rx9PDeAmgErk4YMnRopuq4pHJif/view?usp=drive_link) |
+| Patient#1.ckpt | MitoStructSeg trained on Patient#1  | [download](https://pan.quark.cn/s/5f233e1f1c78)<br>(pwd: xdJe) | [download](https://drive.google.com/file/d/1qtjoYP_fgBqAlzwT7f4V4NSbFhfkoHaS/view?usp=drive_link) |
+| Patient#2.ckpt | MitoStructSeg trained on Patient#2 | [download](https://pan.quark.cn/s/273efdbd0429)<br>(pwd: L82x) | [download](https://drive.google.com/file/d/1vyqp5L1Xc1s7IMkUx58HNsmvt67TJ5Zt/view?usp=drive_link) |
+| Patient#3.ckpt | MitoStructSeg trained on Patient#3 | [download](https://pan.quark.cn/s/b00e1a8fc24e)<br>(pwd: kpdH) | [download](https://drive.google.com/file/d/1f5-q3rx9PDeAmgErk4YMnRopuq4pHJif/view?usp=drive_link) |
+| Mouse Kidney.ckpt | MitoStructSeg trained on Mouse Kidney | [download](https://pan.quark.cn/s/d74097a3f304)<br>(pwd: b5Nb) | [download](https://drive.google.com/file/d/1YXqNwpOJ9sicekGvRQheIoUO8s2dAeFa/view?usp=drive_link) |
 | classification.pt | model for evaluating classification | [download](https://pan.quark.cn/s/8b4f1c58d9a8)<br>(pwd: NEMP) | [download](https://drive.google.com/file/d/1WJ_3EXh0RcMn1LyFHTq7W3Y9vw2hBU5x/view?usp=drive_link) |
-| Mouse Kidney.ckpt | AMM-Seg trained on Mouse Kidney | [download](https://pan.quark.cn/s/d74097a3f304)<br>(pwd: b5Nb) | [download](https://drive.google.com/file/d/1YXqNwpOJ9sicekGvRQheIoUO8s2dAeFa/view?usp=drive_link) |
 
 
 ## <a name="datatree"></a>:crossed_swords:Data Tree
@@ -139,13 +139,13 @@ pip install -r requirements.txt
 
 ## <a name="train"></a>:stars:Train
 
-1. Fill in the [training configuration file](/src/config/patient1_config.yaml) with appropriate values.
+1. Fill in the [training configuration file](/src/config/Patient#1_config.yaml) with appropriate values.
 
 2. Start training!
 
     ```shell
     cd /MitoStructSeg-main/src
-    python main.py -c patient1_config
+    python main.py -c Patient#1_config
     ```
 
 
@@ -153,7 +153,7 @@ pip install -r requirements.txt
 
 **We store our trained models at [GoogleDrive](https://drive.google.com/drive/folders/1plJ0fyeCqIekUGNxKloY3YGMGnmOcsw9?usp=drive_link) or [Quark Cloud](https://pan.quark.cn/s/962f18419644?pwd=4S11)**    
 
-1. Fill in the [training configuration file](/src/config/patient1_config.yaml) with appropriate values.
+1. Fill in the [training configuration file](/src/config/Patient#1_config.yaml) with appropriate values.
 2. Start inference!
    
     ```shell
@@ -191,33 +191,24 @@ pip install -r requirements.txt
 
 2.Usage
 
-- Method1
+  -For Windows:
 
-    - First, open an Administrator Command Prompt and use the `cd` command to navigate to the `MitoStructSeg/vite/` directory of your project. Then, type `npm start` to run the project. This will open a browser and navigate to [http://localhost:3000/free](http://localhost:3000/free).
+  -Run the following command directly in the terminal:
 
-    - Next, open a new command prompt and use the `cd` command to navigate to the `MitoStructSeg/src/` directory. Then, enter `python app.py`. This will start the backend server running locally at `127.0.0.1:5000`.
+      ```shell
 
-- Method2
-  
-    -For Windows:
-  
-    -Run the following command directly in the terminal:
-  
-        ```shell
-  
-        python start_win.py
+      python start_win.py
 
-          ```
-    -For Linux:
-  
-    -Run the following command directly in the terminal:
-  
-        ```shell
-  
-        python start_linux.py
+        ```
+  -For Linux:
 
-          ```
+  -Run the following command directly in the terminal:
 
+      ```shell
+
+      python start_linux.py
+
+        ```
 
 
 <p align="center">
