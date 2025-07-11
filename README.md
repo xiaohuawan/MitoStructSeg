@@ -10,7 +10,7 @@
 - [Train](#train)
 - [Inference](#inference)
 - [GUI](#usage)
-- [3D Visualization](#3Dvisualization)
+- [3D Visualization](#visualization)
 
 ## <a name="update"></a>:new:Update
 
@@ -252,7 +252,7 @@ https://github.com/user-attachments/assets/87ed0033-c7ab-4643-af0a-1c3f13392452
 
 
 
-## <a name="3Dvisualization"></a>📽️ 3D Visualization
+## <a name="visualization"></a>📽️ 3D Visualization
 
 > **3D visualization of segmentation results** in 800×800×400 voxel blocks  
 > 🟢 **Green**: Healthy mitochondria | 🔴 **Red**: Damaged mitochondria
