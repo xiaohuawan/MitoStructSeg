@@ -10,8 +10,7 @@
 - [Train](#Train)
 - [Inference](#inference)
 - [GUI](#Usage)
-
-- [visualization](#visualization)
+- [3D Visualization](#3D_Visualization)
 
 ## <a name="update"></a>:new:Update
 
@@ -145,7 +144,7 @@ pip install -r requirements.txt
 2. Start training!
 
     ```shell
-    cd /MitoStructSeg1-main/src
+    cd /MitoStructSeg-main/src
     python main.py -c patient1_config
     ```
 
@@ -158,7 +157,7 @@ pip install -r requirements.txt
 2. Start inference!
    
     ```shell
-    cd /MitoStructSeg1-main/src
+    cd /MitoStructSeg-main/src
     python inference.py 
     ```
 
