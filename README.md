@@ -6,11 +6,11 @@
 - [Installation](#installation)
 - [Dataset](#segmentation_data)
 - [Pretrained Models](#pretrained_models)
-- [Data Tree](#Data_Tree)
-- [Train](#Train)
+- [Data Tree](#datatree)
+- [Train](#train)
 - [Inference](#inference)
-- [GUI](#Usage)
-- [3D Visualization](#3D_Visualization)
+- [GUI](#usage)
+- [3D Visualization](#3Dvisualization)
 
 ## <a name="update"></a>:new:Update
 
@@ -113,7 +113,7 @@ pip install -r requirements.txt
 | Mouse Kidney.ckpt | AMM-Seg trained on Mouse Kidney | [download](https://pan.quark.cn/s/d74097a3f304)<br>(pwd: b5Nb) | [download](https://drive.google.com/file/d/1YXqNwpOJ9sicekGvRQheIoUO8s2dAeFa/view?usp=drive_link) |
 
 
-## <a name="Data Tree"></a>:crossed_swords:Data Tree
+## <a name="datatree"></a>:crossed_swords:Data Tree
 
     ├── data
     │   ├── patient1
@@ -162,7 +162,7 @@ pip install -r requirements.txt
     ```
 
 
-## <a name="Usage"></a>📽️:GUI
+## <a name="usage"></a>📽️:GUI
 
   The system is divided into four main sections: classification assessment, image segmentation, precise calculation. 
   
@@ -252,7 +252,7 @@ https://github.com/user-attachments/assets/87ed0033-c7ab-4643-af0a-1c3f13392452
 
 
 
-## <a name="3D visualization"></a>📽️ 3D Visualization
+## <a name="3Dvisualization"></a>📽️ 3D Visualization
 
 > **3D visualization of segmentation results** in 800×800×400 voxel blocks  
 > 🟢 **Green**: Healthy mitochondria | 🔴 **Red**: Damaged mitochondria
