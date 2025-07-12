@@ -77,10 +77,7 @@ class Segment(core.MiTo):
             if not image_files:
                 raise ValueError(f"No image files found in the directory: {self.path_data}")
 
-            # val_data = targetDataSet_val(cfg.DATA.data_dir_target,
-            #                                     crop_size=(cfg.DATA.input_size_target, cfg.DATA.input_size_target),
-            #                                     stride=cfg.DATA.target_stride, mode="test")
-            val_data = targetDataSet_val(self.path_data,
+            val_data = targetDataSet_val(cfg.DATA.data_dir_val,
                                     crop_size=(cfg.DATA.input_size_target, cfg.DATA.input_size_target),
                                     stride=cfg.DATA.target_stride, mode="test")
 
@@ -296,7 +293,7 @@ class Segment(core.MiTo):
 def main_from_cli():
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', type=str, default='AMM-Seg', help='config file')
-    parser.add_argument('-c', '--cfg', type=str, default='patient1_config', help='config file')
+    parser.add_argument('-c', '--cfg', type=str, default='Patient#1_config', help='config file')
     args = parser.parse_args()
     
     cfg_file = args.cfg + '.yaml'
@@ -319,12 +316,15 @@ def main_from_cli():
     model = model.to(device)
     model.eval()
     
-    val_data = targetDataSet_val(cfg.DATA.data_dir_target,
+    val_data = targetDataSet_val(cfg.DATA.data_dir_val,
                                  crop_size=(cfg.DATA.input_size_target, cfg.DATA.input_size_target),
                                  stride=cfg.DATA.target_stride, num=num, mode="test")
     valid_provider = torch.utils.data.DataLoader(val_data, batch_size=1, shuffle=False)
     if cfg.TEST.if_evaluate:
-        target_evaluation = Evaluation(cfg.DATA.data_dir_target_label, num=num)
+        validation_label_path = os.path.join(cfg.DATA.data_dir_val, 'label')
+        if not os.path.exists(validation_label_path):
+            validation_label_path = cfg.DATA.data_dir_val
+        target_evaluation = Evaluation(validation_label_path, num=num)
     print('Begin inference...')
     f_valid_txt = open(os.path.join(cfg.TEST.pred_dir, 'scores.txt'), 'a')
     target_stride = cfg.DATA.target_stride
@@ -405,4 +405,3 @@ def main_from_cli():
 
 if __name__ == '__main__':
     main_from_cli()
-
