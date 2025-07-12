@@ -270,7 +270,7 @@ def loop(cfg, train_provider, valid_provider, model, optimizer, iters):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('-c', '--cfg', type=str, default='patient1_config', help='path to config file')
+    parser.add_argument('-c', '--cfg', type=str, default='Patient#1_config', help='path to config file')
     args = parser.parse_args()
 
     cfg_file = args.cfg + '.yaml'
