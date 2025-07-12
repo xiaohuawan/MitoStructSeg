@@ -19,29 +19,50 @@ from dataset.data_aug import aug_img_lab,aug_img
 
 
 def get_source_data(dir, task=None):
-
-    data_path = ["label_100_20230912", "label_100_20231117"]
     source_data = defaultdict(dict)
-    for path in data_path:
-        path = os.path.join(dir, path)
-        data_name = path.split("/")[-1]
-        data = sorted(glob(f"{path}/data/*.tif"))
-        if task == None:
-            label = sorted(glob(f"{path}/label/*.tif"))
-        else:
-            label = sorted(glob(f"{path}/label_{task}/*"))
-            
-        if not os.path.exists(os.path.join(path, "data_texture")) or len(glob(os.path.join(path, "data_texture", "*"))) == 0:
-            generate_texture(os.path.join(path, "data"))
-            
-        data_texture = sorted(glob(f"{path}/data_texture/*.png"))
+    
+    source_domain_path = os.path.join(dir, "Source_domain")
+    
+    if os.path.exists(source_domain_path):
+        data_blocks = sorted([d for d in os.listdir(source_domain_path) 
+                             if d.startswith('data_block') and os.path.isdir(os.path.join(source_domain_path, d))])
         
-        assert len(data) == len(label) == len(data_texture)
-        source_data[data_name] = {
-            "data" : data,
-            "label": label,
-            "data_texture" : data_texture
-        }
+        label_blocks = sorted([d for d in os.listdir(source_domain_path) 
+                              if d.startswith('label_block') and os.path.isdir(os.path.join(source_domain_path, d))])
+        
+        for i, (data_block, label_block) in enumerate(zip(data_blocks, label_blocks)):
+            data_path = os.path.join(source_domain_path, data_block)
+            label_path = os.path.join(source_domain_path, label_block)
+            
+            data = sorted(glob(f"{data_path}/*.tif"))
+            if task == None:
+                label = sorted(glob(f"{label_path}/*.tif"))
+            else:
+                label = sorted(glob(f"{label_path}_{task}/*"))
+            
+            texture_path = data_path + "_texture"
+            if not os.path.exists(texture_path) or len(glob(os.path.join(texture_path, "*"))) == 0:
+                generate_texture(data_path)
+                
+            data_texture = sorted(glob(f"{texture_path}/*.png"))
+            
+            if len(data) > 0 and len(label) > 0:
+                min_len = min(len(data), len(label))
+                data = data[:min_len]
+                label = label[:min_len]
+                
+                if len(data_texture) < min_len:
+                    generate_texture(data_path)
+                    data_texture = sorted(glob(f"{texture_path}/*.png"))[:min_len]
+                else:
+                    data_texture = data_texture[:min_len]
+                
+                block_name = f"block_{i+1}"
+                source_data[block_name] = {
+                    "data": data,
+                    "label": label,
+                    "data_texture": data_texture
+                }
         
     return source_data
 
@@ -59,15 +80,13 @@ class sourceDataSet(data.Dataset):
         return 400000
     
     def __getitem__(self, index):
-        rand_num = random.random()
-        if  rand_num > 0.6:
-            root_img = self.source_data["label_100_20230912"]["data"][:self.train_num]
-            root_label = self.source_data["label_100_20230912"]["label"][:self.train_num]
-            root_texture = self.source_data["label_100_20230912"]["data_texture"][:self.train_num]
-        else:
-            root_img = self.source_data["label_100_20231117"]["data"][:self.train_num]
-            root_label = self.source_data["label_100_20231117"]["label"][:self.train_num]
-            root_texture = self.source_data["label_100_20231117"]["data_texture"][:self.train_num]
+        block_names = list(self.source_data.keys())
+        
+        selected_block = random.choice(block_names)
+        
+        root_img = self.source_data[selected_block]["data"][:self.train_num]
+        root_label = self.source_data[selected_block]["label"][:self.train_num]
+        root_texture = self.source_data[selected_block]["data_texture"][:self.train_num]
 
         k = random.randint(0, len(root_img)-2-self.stride)
         current_img = np.asarray(Image.open(root_img[k]), dtype=np.uint8)
