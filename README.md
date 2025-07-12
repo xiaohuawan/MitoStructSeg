@@ -254,7 +254,7 @@ https://github.com/user-attachments/assets/87ed0033-c7ab-4643-af0a-1c3f13392452
 
 **Patient #1**
 
-https://github.com/user-attachments/assets/dda707b6-f3c1-47c5-a04c-06ddc961e456
+https://github.com/user-attachments/assets/b85e7707-c626-4d58-964d-108532d5a389
 
 ---
 
@@ -266,7 +266,7 @@ https://github.com/user-attachments/assets/538c905c-cd12-424b-a251-fef1ddff8e3b
 
 **Patient #3**
 
-https://github.com/user-attachments/assets/5b55fbd2-ef90-4c0b-9ea8-b96a10e36587
+https://github.com/user-attachments/assets/a2fb0f46-d915-4789-9b78-10aa733ff2cc
 
 </div>
 
