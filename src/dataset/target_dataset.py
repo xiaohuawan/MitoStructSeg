@@ -25,11 +25,11 @@ from utils.data_utils import generate_texture
 
 class targetDataSet(data.Dataset):
     def __init__(self, root_img, crop_size=(800, 800), stride=1, num=200, s=(50,150)):
-        self.root_img = sorted(glob(f"{root_img}/data_all/*.tif"))[:num]
-        if not os.path.join(root_img, "data_all_texture") or len(sorted(glob(f"{root_img}/data_all_texture/*.png"))) < 200:
-            generate_texture(os.path.join(root_img, "data_all"), s=s)
+        self.root_img = sorted(glob(f"{root_img}/Target_domain/data/*.tif"))[:num]
+        if not os.path.join(root_img, "Target_domain", "data_texture") or len(sorted(glob(f"{root_img}/Target_domain/data_texture/*.png"))) < 200:
+            generate_texture(os.path.join(root_img, "Target_domain", "data"), s=s)
             
-        self.root_texture = sorted(glob(f"{root_img}/data_all_texture/*.png"))[:num]
+        self.root_texture = sorted(glob(f"{root_img}/Target_domain/data_texture/*.png"))[:num]
         
         # if num != -1:
         #     assert len(self.root_texture) == num
@@ -117,11 +117,15 @@ class targetDataSet(data.Dataset):
 class targetDataSet_val(data.Dataset):
     def __init__(self, root_img, crop_size=[800, 800], stride=1, num=40, mode="train", reverse=False):
 
-        self.root_img = sorted(glob(f"{root_img}/data_all/*.tif"))[:num]
-        if not os.path.exists(os.path.join(root_img, "data_all_texture")) or len(sorted(glob(f"{root_img}/data_all_texture/*.png"))) == 0:
-            generate_texture(os.path.join(root_img, "data_all"))
+        data_path = os.path.join(root_img, "data")
+        
+        self.root_img = sorted(glob(f"{data_path}/*.tif"))[:num]
+        
+        texture_path = data_path + "_texture"
+        if not os.path.exists(texture_path) or len(sorted(glob(f"{texture_path}/*.png"))) == 0:
+            generate_texture(data_path)
             
-        self.root_texture = sorted(glob(f"{root_img}/data_all_texture/*.png"))[:num]
+        self.root_texture = sorted(glob(f"{texture_path}/*.png"))[:num]
         
         if reverse:
             self.root_img = [self.root_img[0]] + self.root_img
