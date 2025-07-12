@@ -238,7 +238,7 @@ pip install -r requirements.txt
     </a> <br />
 </p>
 
-https://github.com/user-attachments/assets/87ed0033-c7ab-4643-af0a-1c3f13392452
+https://github.com/user-attachments/assets/4b291fc1-df67-466f-9ffc-a79a8901fe46
 
 
 
