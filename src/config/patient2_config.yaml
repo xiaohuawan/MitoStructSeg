@@ -1,4 +1,4 @@
-NAME: 'patient2' 
+NAME: 'patient1' 
 
 MODEL:
     input_nc: 1
@@ -14,7 +14,7 @@ TRAIN:
     train_num: 100
     cache_path: '../caches/'
     save_path: '../models/'
-    loss_func: 'WeightedMSELoss'   # 'WeightedBCELoss', 'BCELoss'
+    loss_func: 'WeightedMSELoss' 
     if_adv_weight: False
     cross_loss_source: False
     cross_loss_target: True
@@ -41,21 +41,20 @@ TRAIN:
     batch_size: 2
     num_workers: 1
     if_cuda: True
-    device: "cuda:0"
+    device: "cuda:2"
 
-    random_seed: 20221016  # -1 is none
+    random_seed: 20221016 
 
 DATA:
     input_size: 800
     input_size_target: 800
     data_dir_source: '../data/patient1'
     data_dir_target: '../data/patient2'
-    data_dir_val: "../data/patient2"
+    data_dir_val: "../data/patient2/Valid"
     target_stride: 1
     source_stride: 1
-    
 
 TEST:
-    pred_dir: ../data_pred/AMM-Seg/patient2
+    pred_dir: ../data_pred/patient2
     ckpt_path: ../models/Patient#2.ckpt
     if_evaluate: True
