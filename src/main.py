@@ -69,7 +69,7 @@ def load_dataset(cfg):
                                            num_workers=cfg.TRAIN.num_workers)
     
     if cfg.TRAIN.if_valid:
-        val_data = targetDataSet_val(cfg.DATA.data_dir_target,
+        val_data = targetDataSet_val(cfg.DATA.data_dir_val,
                                             crop_size=(cfg.DATA.input_size_target, cfg.DATA.input_size_target),
                                             stride=cfg.DATA.target_stride)
         valid_provider = torch.utils.data.DataLoader(val_data,
@@ -130,7 +130,10 @@ def loop(cfg, train_provider, valid_provider, model, optimizer, iters):
                                          shuffle=True,
                                          num_workers=cfg.TRAIN.num_workers)
     if cfg.TRAIN.if_valid:
-        target_evaluation = Evaluation(cfg.DATA.data_dir_target_label)
+        validation_label_path = os.path.join(cfg.DATA.data_dir_val, 'label')
+        if not os.path.exists(validation_label_path):
+            validation_label_path = cfg.DATA.data_dir_val
+        target_evaluation = Evaluation(validation_label_path)
     
     trainloader_iter = enumerate(train_provider)
     targetloader_iter = enumerate(targetloader)
