@@ -50,12 +50,12 @@ DATA:
     input_size_target: 800
     data_dir_source: '../data/patient1'
     data_dir_target: '../data/patient2'
-    data_dir_target_label: "../data/patient2/label_struct"
+    data_dir_val: "../data/patient2"
     target_stride: 1
     source_stride: 1
     
 
 TEST:
-    pred_dir: ../data_pred/patient2
-    ckpt_path: ../models/patient2.ckpt
+    pred_dir: ../data_pred/AMM-Seg/patient2
+    ckpt_path: ../models/Patient#2.ckpt
     if_evaluate: True
