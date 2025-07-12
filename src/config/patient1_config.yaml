@@ -41,7 +41,7 @@ TRAIN:
     batch_size: 2
     num_workers: 1
     if_cuda: True
-    device: "cuda:0"
+    device: "cuda:2"
 
     random_seed: 20221016 
 
@@ -50,11 +50,11 @@ DATA:
     input_size_target: 800
     data_dir_source: '../data/patient1'
     data_dir_target: '../data/patient1'
-    data_dir_target_label: "../data/patient1/label_struct"
+    data_dir_val: "../data/patient1/Valid"
     target_stride: 1
     source_stride: 1
 
 TEST:
     pred_dir: ../data_pred/patient1
-    ckpt_path: ../models/patient1.ckpt
+    ckpt_path: ../models/Patient#1.ckpt
     if_evaluate: True
