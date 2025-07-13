@@ -232,12 +232,6 @@ pip install -r requirements.txt
 </p>
 
 
-<p align="center">
-    <a href="https://github.com/xiaohuawan/MitoStructSeg1/blob/main/video/presentation%20workflow.mp4">
-        <img src="https://img.shields.io/badge/Watch%20Video-presentation%20workflow.mp4-blue?style=for-the-badge" />
-    </a> <br />
-</p>
-
 https://github.com/user-attachments/assets/e5b32981-9ba9-4b80-80d5-9e84bb63c476
 
 
