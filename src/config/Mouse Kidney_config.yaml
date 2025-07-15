@@ -1,4 +1,4 @@
-NAME: 'Mouse Kidney' 
+NAME: 'Mouse_Kidney' 
 
 MODEL:
     input_nc: 1
@@ -48,14 +48,14 @@ TRAIN:
 DATA:
     input_size: 800
     input_size_target: 800
-    data_dir_source: '../data/Mouse Kidney'
-    data_dir_target: '../data/Mouse Kidney'
-    data_dir_target_label: "../data/Mouse Kidney/Valid"
+    data_dir_source: '../data/Mouse_Kidney'
+    data_dir_target: '../data/Mouse_Kidney'
+    data_dir_target_label: "../data/Mouse_Kidney/Valid"
     target_stride: 1
     source_stride: 1
     
 
 TEST:
-    pred_dir: ../data_pred/Mouse Kidney
-    ckpt_path: ../models/Mouse Kidney.ckpt
+    pred_dir: ../data_pred/Mouse_Kidney
+    ckpt_path: ../models/Mouse_Kidney.ckpt
     if_evaluate: True
