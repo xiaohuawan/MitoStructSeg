@@ -116,7 +116,7 @@ class Segment(core.MiTo):
             highlight_paths = []
             highlight_paths2 = []
             current_path = os.getcwd()
-            print("8888888888888888", current_path)
+            print("current_path", current_path)
             self.json_dir = os.path.join(current_path, '..', 'vite', 'public', current_time)
             self.json_dir = os.path.abspath(self.json_dir)
             self.json_dir2 = os.path.join(current_path, '..', 'vite', 'public', 'seg')
