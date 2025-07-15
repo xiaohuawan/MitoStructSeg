@@ -306,7 +306,7 @@ def main_from_cli():
     model = AMM_Seg(n_channels=cfg.MODEL.input_nc, n_classes=cfg.MODEL.output_nc).to(device)
     
     os.makedirs(cfg.TEST.pred_dir, exist_ok=True)
-    checkpoint = torch.load(cfg.TEST.ckpt_path)
+    checkpoint = torch.load(cfg.TEST.ckpt_path, map_location=device)
     new_state_dict = OrderedDict()
     state_dict = checkpoint['model_weights']
     for k, v in state_dict.items():
