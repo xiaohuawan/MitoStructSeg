@@ -128,6 +128,10 @@ pip install -r requirements.txt
     │   │       ├── data
     │   │       └── label
     ├── models
+    │   ├── Patient#1_config.ckpt
+    │   ├── Patient#2_config.ckpt
+    │   ├── Patient#3_config.ckpt
+    │   └── Mouse_Kidney.ckpt
     ├── src
     │   ├── config
     │   ├── dataset
@@ -143,8 +147,8 @@ pip install -r requirements.txt
 2. Start training!
 
     ```shell
-    cd /MitoStructSeg-main/src
-    python main.py -c Patient#1_config
+    cd /MitoStructSeg/src
+    python main.py
     ```
 
 
@@ -156,7 +160,7 @@ pip install -r requirements.txt
 2. Start inference!
    
     ```shell
-    cd /MitoStructSeg-main/src
+    cd /MitoStructSeg/src
     python inference.py 
     ```
 
