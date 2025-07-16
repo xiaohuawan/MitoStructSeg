@@ -115,7 +115,7 @@ class targetDataSet(data.Dataset):
 
 
 class targetDataSet_val(data.Dataset):
-    def __init__(self, root_img, crop_size=[800, 800], stride=1, num=40, mode="train", reverse=False):
+    def __init__(self, root_img, crop_size=[800, 800], stride=1, num=40, mode="train", reverse=False, s=(25,50)):
 
         data_path = os.path.join(root_img, "data")
         
@@ -123,7 +123,7 @@ class targetDataSet_val(data.Dataset):
         
         texture_path = data_path + "_texture"
         if not os.path.exists(texture_path) or len(sorted(glob(f"{texture_path}/*.png"))) == 0:
-            generate_texture(data_path, s=(25,50))
+            generate_texture(data_path, s=s)
             
         self.root_texture = sorted(glob(f"{texture_path}/*.png"))[:num]
         
