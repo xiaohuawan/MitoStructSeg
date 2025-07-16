@@ -79,7 +79,7 @@ class Segment(core.MiTo):
 
             val_data = targetDataSet_val(cfg.DATA.data_dir_val,
                                     crop_size=(cfg.DATA.input_size_target, cfg.DATA.input_size_target),
-                                    stride=cfg.DATA.target_stride, mode="test")
+                                    stride=cfg.DATA.target_stride, mode="test", s=cfg.TRAIN.texture_value)
 
             valid_provider = torch.utils.data.DataLoader(val_data, batch_size=1, shuffle=False)
 
@@ -318,7 +318,7 @@ def main_from_cli():
     
     val_data = targetDataSet_val(cfg.DATA.data_dir_val,
                                  crop_size=(cfg.DATA.input_size_target, cfg.DATA.input_size_target),
-                                 stride=cfg.DATA.target_stride, num=num, mode="test")
+                                 stride=cfg.DATA.target_stride, num=num, mode="test", s=cfg.TRAIN.texture_value)
     valid_provider = torch.utils.data.DataLoader(val_data, batch_size=1, shuffle=False)
     if cfg.TEST.if_evaluate:
         validation_label_path = os.path.join(cfg.DATA.data_dir_val, 'label')
