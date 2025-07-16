@@ -74,7 +74,7 @@ class Segment(core.MiTo):
 
         val_data = targetDataSet_val(cfg.DATA.data_dir_target,
                                             crop_size=(cfg.DATA.input_size_target, cfg.DATA.input_size_target),
-                                            stride=cfg.DATA.target_stride, num=num, mode="test")
+                                            stride=cfg.DATA.target_stride, num=num, mode="test", s=cfg.TRAIN.texture_value)
 
         valid_provider = torch.utils.data.DataLoader(val_data, batch_size=1, shuffle=False)
 
