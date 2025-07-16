@@ -62,14 +62,14 @@ def load_dataset(cfg):
     t1 = time.time()
     source_data = sourceDataSet(cfg.DATA.source_data,
                                 crop_size=(cfg.DATA.input_size, cfg.DATA.input_size),
-                                stride=cfg.DATA.source_stride,train_num=cfg.TRAIN.train_num, s)
+                                stride=cfg.DATA.source_stride,train_num=cfg.TRAIN.train_num)
     train_provider = torch.utils.data.DataLoader(source_data,
                                            batch_size=cfg.TRAIN.batch_size,
                                            shuffle=False,
                                            num_workers=cfg.TRAIN.num_workers)
     
     if cfg.TRAIN.if_valid:
-        val_data = targetDataSet_val(cfg.DATA.data_dir_val,
+        val_data = targetDataSet_val(cfg.DATA.data_dir_val, cfg.TRAIN.texture_value, 
                                             crop_size=(cfg.DATA.input_size_target, cfg.DATA.input_size_target),
                                             stride=cfg.DATA.target_stride)
         valid_provider = torch.utils.data.DataLoader(val_data,
@@ -122,7 +122,7 @@ def loop(cfg, train_provider, valid_provider, model, optimizer, iters):
     target_stride = cfg.DATA.target_stride
     device = cfg.TRAIN.device
     
-    target_data = targetDataSet(cfg.DATA.data_dir_target,
+    target_data = targetDataSet(cfg.DATA.data_dir_target,cfg.TRAIN.texture_value, 
                                 crop_size=(cfg.DATA.input_size_target, cfg.DATA.input_size_target),
                                 stride=cfg.DATA.target_stride)
     targetloader = torch.utils.data.DataLoader(target_data,
