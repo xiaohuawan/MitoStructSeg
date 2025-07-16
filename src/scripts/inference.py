@@ -72,9 +72,9 @@ class Segment(core.MiTo):
         if not image_files:
             raise ValueError(f"No image files found in the directory: {self.path_data}")
 
-        val_data = targetDataSet_val(cfg.DATA.data_dir_target,
+        val_data = targetDataSet_val(cfg.DATA.data_dir_target, cfg.TRAIN.texture_value, 
                                             crop_size=(cfg.DATA.input_size_target, cfg.DATA.input_size_target),
-                                            stride=cfg.DATA.target_stride, num=num, mode="test", s=cfg.TRAIN.texture_value)
+                                            stride=cfg.DATA.target_stride, num=num, mode="test")
 
         valid_provider = torch.utils.data.DataLoader(val_data, batch_size=1, shuffle=False)
 
