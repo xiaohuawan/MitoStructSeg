@@ -276,7 +276,7 @@ if __name__ == "__main__":
     with open('./config/' + cfg_file, 'r') as f:
         cfg = AttrDict(yaml.load(f, Loader=yaml.FullLoader))
     
-    source_data = get_source_data(cfg.DATA.data_dir_source)
+    source_data = get_source_data(cfg.DATA.data_dir_source, cfg.TRAIN.texture_value)
     cfg["DATA"]["source_data"] = source_data
 
 
