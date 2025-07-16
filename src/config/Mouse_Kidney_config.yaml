@@ -50,7 +50,7 @@ DATA:
     input_size_target: 800
     data_dir_source: '../data/Mouse_Kidney'
     data_dir_target: '../data/Mouse_Kidney'
-    data_dir_target_label: "../data/Mouse_Kidney/Valid"
+    data_dir_val: "../data/Mouse_Kidney/Valid"
     target_stride: 1
     source_stride: 1
     
