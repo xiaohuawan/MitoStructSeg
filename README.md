@@ -128,9 +128,9 @@ pip install -r requirements.txt
     │   │       ├── data
     │   │       └── label
     ├── models
-    │   ├── Patient#1_config.ckpt
-    │   ├── Patient#2_config.ckpt
-    │   ├── Patient#3_config.ckpt
+    │   ├── Patient#1.ckpt
+    │   ├── Patient#2.ckpt
+    │   ├── Patient#3.ckpt
     │   └── Mouse_Kidney.ckpt
     ├── src
     │   ├── config
