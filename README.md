@@ -148,7 +148,7 @@ pip install -r requirements.txt
 
     ```shell
     cd /MitoStructSeg/src
-    python main.py
+    python main.py -c Patient#1_config
     ```
 
 
@@ -161,7 +161,7 @@ pip install -r requirements.txt
    
     ```shell
     cd /MitoStructSeg/src
-    python inference.py 
+    python inference.py -c Patient#1_config
     ```
 
 
