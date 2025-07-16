@@ -14,11 +14,7 @@ from skimage import io, segmentation, morphology, exposure
 from utils.data_utils import normalization2, cropping, generate_texture
 from dataset.data_aug import aug_img_lab,aug_img
 
-
-
-
-
-def get_source_data(dir, s=(25,50), task=None):
+def get_source_data(dir, s, task=None):
     source_data = defaultdict(dict)
     
     source_domain_path = os.path.join(dir, "Source_domain")
