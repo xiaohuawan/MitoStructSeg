@@ -69,7 +69,7 @@ def load_dataset(cfg):
                                            num_workers=cfg.TRAIN.num_workers)
     
     if cfg.TRAIN.if_valid:
-        val_data = targetDataSet_val(cfg.DATA.data_dir_target,
+        val_data = targetDataSet_val(cfg.DATA.data_dir_target, cfg.TRAIN.texture_value, 
                                             crop_size=(cfg.DATA.input_size_target, cfg.DATA.input_size_target),
                                             stride=cfg.DATA.target_stride)
         valid_provider = torch.utils.data.DataLoader(val_data,
@@ -122,7 +122,7 @@ def loop(cfg, train_provider, valid_provider, model, optimizer, iters):
     target_stride = cfg.DATA.target_stride
     device = cfg.TRAIN.device
     
-    target_data = targetDataSet(cfg.DATA.data_dir_target,
+    target_data = targetDataSet(cfg.DATA.data_dir_target, cfg.TRAIN.texture_value, 
                                 crop_size=(cfg.DATA.input_size_target, cfg.DATA.input_size_target),
                                 stride=cfg.DATA.target_stride)
     targetloader = torch.utils.data.DataLoader(target_data,
