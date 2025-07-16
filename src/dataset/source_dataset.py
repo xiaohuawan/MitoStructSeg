@@ -18,7 +18,7 @@ from dataset.data_aug import aug_img_lab,aug_img
 
 
 
-def get_source_data(dir, task=None):
+def get_source_data(dir, s=(25,50), task=None):
     source_data = defaultdict(dict)
     
     source_domain_path = os.path.join(dir, "Source_domain")
@@ -42,7 +42,7 @@ def get_source_data(dir, task=None):
             
             texture_path = data_path + "_texture"
             if not os.path.exists(texture_path) or len(glob(os.path.join(texture_path, "*"))) == 0:
-                generate_texture(data_path)
+                generate_texture(data_path, s=s)
                 
             data_texture = sorted(glob(f"{texture_path}/*.png"))
             
@@ -52,7 +52,7 @@ def get_source_data(dir, task=None):
                 label = label[:min_len]
                 
                 if len(data_texture) < min_len:
-                    generate_texture(data_path)
+                    generate_texture(data_path, s=s)
                     data_texture = sorted(glob(f"{texture_path}/*.png"))[:min_len]
                 else:
                     data_texture = data_texture[:min_len]
