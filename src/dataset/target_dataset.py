@@ -24,7 +24,7 @@ from utils.data_utils import generate_texture
 
 
 class targetDataSet(data.Dataset):
-    def __init__(self, root_img, crop_size=(800, 800), stride=1, num=200, s=(50,150)):
+    def __init__(self, root_img, s, crop_size=(800, 800), stride=1, num=200):
         self.root_img = sorted(glob(f"{root_img}/Target_domain/data/*.tif"))[:num]
         if not os.path.join(root_img, "Target_domain", "data_texture") or len(sorted(glob(f"{root_img}/Target_domain/data_texture/*.png"))) < 200:
             generate_texture(os.path.join(root_img, "Target_domain", "data"), s=s)
@@ -115,7 +115,7 @@ class targetDataSet(data.Dataset):
 
 
 class targetDataSet_val(data.Dataset):
-    def __init__(self, root_img, crop_size=[800, 800], stride=1, num=40, mode="train", reverse=False, s=(25,50)):
+    def __init__(self, root_img, s, crop_size=[800, 800], stride=1, num=40, mode="train", reverse=False):
 
         data_path = os.path.join(root_img, "data")
         
