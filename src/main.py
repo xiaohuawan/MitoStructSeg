@@ -62,7 +62,7 @@ def load_dataset(cfg):
     t1 = time.time()
     source_data = sourceDataSet(cfg.DATA.source_data,
                                 crop_size=(cfg.DATA.input_size, cfg.DATA.input_size),
-                                stride=cfg.DATA.source_stride,train_num=cfg.TRAIN.train_num)
+                                stride=cfg.DATA.source_stride,train_num=cfg.TRAIN.train_num, s)
     train_provider = torch.utils.data.DataLoader(source_data,
                                            batch_size=cfg.TRAIN.batch_size,
                                            shuffle=False,
@@ -279,7 +279,7 @@ if __name__ == "__main__":
     with open('./config/' + cfg_file, 'r') as f:
         cfg = AttrDict(yaml.load(f, Loader=yaml.FullLoader))
     
-    source_data = get_source_data(cfg.DATA.data_dir_source)
+    source_data = get_source_data(cfg.DATA.data_dir_source, cfg.TRAIN.texture_value)
     cfg["DATA"]["source_data"] = source_data
 
 
