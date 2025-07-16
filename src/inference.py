@@ -316,9 +316,9 @@ def main_from_cli():
     model = model.to(device)
     model.eval()
     
-    val_data = targetDataSet_val(cfg.DATA.data_dir_val,
+    val_data = targetDataSet_val(cfg.DATA.data_dir_val, cfg.TRAIN.texture_value, 
                                  crop_size=(cfg.DATA.input_size_target, cfg.DATA.input_size_target),
-                                 stride=cfg.DATA.target_stride, num=num, mode="test", s=cfg.TRAIN.texture_value)
+                                 stride=cfg.DATA.target_stride, num=num, mode="test")
     valid_provider = torch.utils.data.DataLoader(val_data, batch_size=1, shuffle=False)
     if cfg.TEST.if_evaluate:
         validation_label_path = os.path.join(cfg.DATA.data_dir_val, 'label')
