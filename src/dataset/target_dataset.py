@@ -123,7 +123,7 @@ class targetDataSet_val(data.Dataset):
         
         texture_path = data_path + "_texture"
         if not os.path.exists(texture_path) or len(sorted(glob(f"{texture_path}/*.png"))) == 0:
-            generate_texture(data_path)
+            generate_texture(data_path, s=(25,50))
             
         self.root_texture = sorted(glob(f"{texture_path}/*.png"))[:num]
         
